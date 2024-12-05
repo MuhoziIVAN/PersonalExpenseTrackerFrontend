@@ -1,6 +1,8 @@
 import  { useState } from 'react';
 import axios from 'axios';
 
+axios.defaults.withCredentials = true;
+
 const ForgotPasswordPage = () => {
   const [email, setEmail] = useState('');
   const [successMessage, setSuccessMessage] = useState('');

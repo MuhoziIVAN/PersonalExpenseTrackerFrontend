@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
+axios.defaults.withCredentials = true;
+
 // Create an axios instance with base configuration
 const axiosInstance = axios.create({
   baseURL: 'https://personalexpensetrackerbackend-3htl.onrender.com/api',

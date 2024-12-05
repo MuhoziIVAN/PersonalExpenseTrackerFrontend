@@ -3,6 +3,8 @@ import axios from "axios";
 import IncomeTable from "./IncomeTable";
 import IncomeFilters from "./IncomeFilters";
 
+axios.defaults.withCredentials = true;
+
 // Create an axios instance with base configuration
 const axiosInstance = axios.create({
   baseURL: 'https://personalexpensetrackerbackend-3htl.onrender.com/api',
