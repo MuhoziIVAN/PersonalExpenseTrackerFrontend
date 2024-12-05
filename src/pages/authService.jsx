@@ -47,7 +47,7 @@ const authService = {
   },
 
   profile:async function getUserProfile() {
-    const response = await fetch('http://localhost:8080/profile', {
+    const response = await fetch('https://personalexpensetrackerfrontend.onrender.com/profile', {
         credentials: 'include', // Include cookies for authentication
     });
     if (!response.ok) {
